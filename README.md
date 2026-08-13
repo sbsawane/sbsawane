@@ -17,4 +17,4 @@ Here are some ideas to get you started:
 
 
 ## 📄 Resume
-[Click here to view my resume](./Sandesh_Sawane_JPMorgan_SE3_Resume.docx.pdf)
+[Click here to view my resume](./.private/resume.pdf)
