@@ -14,3 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+## 📄 Resume
+[Click here to view my resume](./Sandesh_Sawane_JPMorgan_SE3_Resume.docx.pdf)
