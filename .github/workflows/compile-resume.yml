@@ -23,13 +23,17 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: .private/Sandesh_Sawane_Resume.tex
-
+      
+      - name: Generate Preview Image
+        run: |
+                sudo apt-get install -y poppler-utils
+                pdftoppm -png -r 150 -f 1 -l 1 .private/Sandesh_Sawane_Resume.pdf resume-preview
       - name: Commit and push compiled PDF
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           mv .private/Sandesh_Sawane_Resume.pdf resume.pdf
-          git add resume.pdf
+          git add resume.pdf resume-preview-1.png
           git commit -m "Auto-compile resume.pdf [skip ci]" || echo "No changes to commit"
           git push
