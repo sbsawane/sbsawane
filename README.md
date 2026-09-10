@@ -17,4 +17,5 @@ Here are some ideas to get you started:
 
 
 ## 📄 Resume
-[Click here to view my resume](./.private/Sandesh%20Sawane%20Resume%20Github.pdf)
+
+[![View Resume](https://img.shields.io/badge/PDF-View_Resume-1f6feb?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](resume.pdf)
