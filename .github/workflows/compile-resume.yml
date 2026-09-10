@@ -26,14 +26,18 @@ jobs:
       
       - name: Generate Preview Image
         run: |
-                sudo apt-get install -y poppler-utils
-                pdftoppm -png -r 150 -f 1 -l 1 .private/Sandesh_Sawane_Resume.pdf resume-preview
-      - name: Commit and push compiled PDF
+          sudo apt-get update && sudo apt-get install -y poppler-utils
+          # Find the compiled PDF whether it was saved in .private/ or root
+          PDF_PATH=$(find . -name "Sandesh_Sawane_Resume.pdf" | head -n 1)
+          echo "Found PDF at: $PDF_PATH"
+          pdftoppm -png -r 150 -f 1 -l 1 "$PDF_PATH" resume-preview
+          mv "$PDF_PATH" ./resume.pdf
+
+      - name: Commit and push compiled PDF and preview
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          mv .private/Sandesh_Sawane_Resume.pdf resume.pdf
           git add resume.pdf resume-preview-1.png
-          git commit -m "Auto-compile resume.pdf [skip ci]" || echo "No changes to commit"
+          git commit -m "Auto-compile resume.pdf and preview [skip ci]" || echo "No changes to commit"
           git push
