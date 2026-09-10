@@ -3,10 +3,10 @@ name: Build and Deploy Resume PDF
 on:
   push:
     paths:
-      - 'Sandesh_Sawane_Resume.tex'
+      - '.private/Sandesh_Sawane_Resume.tex'
   pull_request:
     paths:
-      - 'Sandesh_Sawane_Resume.tex'
+      - '.private/Sandesh_Sawane_Resume.tex'
   workflow_dispatch:
 
 permissions:
@@ -22,14 +22,14 @@ jobs:
       - name: Compile LaTeX to PDF
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: Sandesh_Sawane_Resume.tex
+          root_file: .private/Sandesh_Sawane_Resume.tex
 
       - name: Commit and push compiled PDF
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          mv Sandesh_Sawane_Resume.pdf resume.pdf
+          mv .private/Sandesh_Sawane_Resume.pdf resume.pdf
           git add resume.pdf
           git commit -m "Auto-compile resume.pdf [skip ci]" || echo "No changes to commit"
           git push
