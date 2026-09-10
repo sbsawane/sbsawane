@@ -1,0 +1,154 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Sandesh Sawane} \\ \vspace{4pt}
+    \small Mumbai, India \ $|$ \ +91 8341897290 \ $|$ \ \href{mailto:sbsawane@gmail.com}{\underline{sbsawane@gmail.com}} \ $|$ \ \href{https://linkedin.com/in/sandesh-sawane}{\underline{linkedin.com/in/sandesh-sawane}}
+\end{center}
+
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Senior QA SDET with 4.5+ years of experience designing scalable test automation frameworks, API validation suites, and cloud-native quality infrastructure across distributed systems. Core expertise in Java, REST Assured, Selenium, Cypress, and Cucumber BDD, with hands-on delivery in Dockerized test execution, Kubernetes test pods, and automated CI/CD quality gates via Jenkins and GitHub Actions. Proven track record of spearheading test strategies across microservices and UI workflows, championing shift-left quality practices, and mentoring engineering teams to achieve high test coverage and zero-leakage production releases.}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Core Tech:} Java, Python, SQL (MySQL) \\
+     \textbf{API \& Backend Testing:} REST Assured, Postman, RESTful Web Services, JSON/XML Schema \& Payload Assertions, Microservices Validation, Database Testing \\
+     \textbf{UI \& Automation Frameworks:} Selenium WebDriver (Java), Cypress, Cucumber BDD (Gherkin), TestNG, Page Object Model (POM), Playwright, Parallel Execution \\
+     \textbf{CI/CD, Cloud \& Containers:} Docker, Kubernetes (Test Pods), Jenkins, GitHub Actions, Maven, Git, SonarQube Quality Gates \\
+     \textbf{Process \& Test Management:} Jira, Confluence, Distributed Systems Testing, Defect Root Cause Analysis (RCA), Chaos \& Boundary Testing, Agile/Scrum ceremonies, Test Strategy \& Planning
+    }}
+\end{itemize}
+\vspace{-10pt}
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SDET Engineer (Senior Associate)}{Apr 2025 -- Jul 2026}
+      {Genpact}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{API \& Distributed Systems Automation:} Architected robust backend and RESTful API automation suites using Java and REST Assured, validating high-throughput service transactions and reducing API regression cycles across microservices.}
+        \resumeItem{\textbf{Scalable UI \& BDD Frameworks:} Spearheaded modular POM-based test automation frameworks utilizing Java, Selenium, and Cypress integrated with Cucumber BDD, accelerating test authoring by 50\% and slashing manual regression cycles by 90\%.}
+        \resumeItem{\textbf{Containerized CI/CD Quality Gates:} Designed and maintained continuous integration pipelines using Jenkins and GitHub Actions, packaging execution environments into Docker containers and orchestrating parallel test jobs on Kubernetes test clusters.}
+        \resumeItem{\textbf{Quality Advocacy \& Code Governance:} Championed testability in cross-functional Agile ceremonies, governing code reviews/PRs for framework reliability, enforcing SonarQube quality thresholds, and mentoring junior engineers on clean-code automation practices.}
+        \resumeItem{\textbf{Defect Analytics \& Observability:} Engineered Python data-pipeline automations to aggregate cross-service defect analytics and logs, cutting issue turnaround by 80\% and providing real-time quality metrics to engineering leadership.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Analyst (QA \& Automation)}{Jan 2022 -- Apr 2025}
+      {Reach Local India}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Resilience \& Boundary Testing:} Executed chaos, boundary, and non-functional validation across integration layers, maintaining 100\% scenario coverage and zero high-severity escape defects for mission-critical platforms.}
+        \resumeItem{\textbf{Backend \& Data Integrity Validation:} Conducted deep-dive root cause analysis across distributed identity and service sync architectures, writing complex SQL assertions to resolve data anomalies and ensure 100\% payload integrity.}
+        \resumeItem{\textbf{Process Standardization:} Authored engineering QA documentation, standardized automated reporting metrics in Jira, and developed reusable automation libraries adopted across QA pods.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Consultant / Co-Founder}{Sep 2020 -- Dec 2021}
+      {HBS Dental Care}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Platform Quality Delivery:} Led end-to-end quality strategy, requirement traceability, and release verification for a cloud-based service platform, achieving a 40\% reduction in workflow processing errors.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL PROJECTS & ENGINEERING POCS-----------
+\section{Technical Projects \& Engineering POCs}
+    \resumeSubHeadingListStart
+      \resumeItem{\textbf{Cloud-Native Containerized Test Harness:} Designed an automated testing infrastructure utilizing Docker and Kubernetes pods with GitHub Actions and Jenkins pipelines, enabling isolated, parallel regression runs across microservice endpoints and dynamic document exporters.}
+      \resumeItem{\textbf{Distributed Microservices \& REST API Suite:} Built an automated verification suite targeting cloud-hosted REST APIs with REST Assured (Java) and Postman, validating complex payload assertions, token-based authentication, and schema compliance.}
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION & HONORS-----------
+\section{Education \& Honors}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology (NIT), Warangal}{Warangal, India}
+      {Bachelor of Technology (B.Tech) in Electronics and Communication Engineering}{}
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+  \begin{itemize}[leftmargin=0.15in]
+    \resumeItem{\textbf{Genpact Bronze Award (2025):} Recognized for technical excellence and engineering impact in enterprise automation delivery.}
+  \end{itemize}
+
+\end{document}
