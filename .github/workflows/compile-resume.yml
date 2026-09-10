@@ -19,12 +19,13 @@ jobs:
       - name: Compile LaTeX to PDF
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: resume.tex
+          root_file: Sandesh_Sawane_Resume.tex
 
       - name: Commit and push compiled PDF
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          mv Sandesh_Sawane_Resume.pdf resume.pdf
           git add resume.pdf
           git commit -m "Auto-compile resume.pdf [skip ci]" || echo "No changes to commit"
           git push
