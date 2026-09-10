@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - 'Sandesh_Sawane_Resume.tex'
+  pull_request:
+    paths:
+      - 'Sandesh_Sawane_Resume.tex'
   workflow_dispatch:
 
 permissions:
