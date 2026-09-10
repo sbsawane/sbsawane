@@ -16,6 +16,12 @@ Here are some ideas to get you started:
 -->
 
 
+<!--## 📄 Resume
+
+[![View Resume](https://img.shields.io/badge/PDF-View_Resume-1f6feb?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](resume.pdf)-->
+
 ## 📄 Resume
 
-[![View Resume](https://img.shields.io/badge/PDF-View_Resume-1f6feb?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](resume.pdf)
+[![Resume Preview](resume-preview-1.png)](resume.pdf)
+
+<sub>Click the image to view the full PDF</sub>
